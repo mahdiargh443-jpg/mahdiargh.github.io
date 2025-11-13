@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="معرفی چنل Mahdiar YT در تلگرام">
+  <title>Mahdiar YT Channel</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Vazirmatn', sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #00bcd4;
+    }
+    p {
+      max-width: 500px;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    a.button {
+      text-decoration: none;
+      background: #00bcd4;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background: #0097a7;
+    }
+    .lang-switch {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #1a1a1a;
+      border-radius: 6px;
+      padding: 6px 12px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-switch" onclick="switchLang()">English</div>
+  <div id="fa">
+    <h1>چنل Mahdiar YT</h1>
+    <p>به چنل رسمی مهدیار وای تی خوش اومدید! اینجا جدیدترین ویدیوها، آموزش‌ها و نکات فنی به اشتراک گذاشته می‌شن. برای همراهی با ما در تلگرام روی دکمه زیر بزنید 👇</p>
+    <a href="https://t.me/Crack_Shap1" target="_blank" class="button">ورود به چنل تلگرام</a>
+  </div>
+  <div id="en" style="display:none;">
+    <h1>Mahdiar YT Channel</h1>
+    <p>Welcome to the official Mahdiar YT Telegram channel! Here you'll find the latest videos, tutorials, and tech tips. Click below to join our Telegram channel 👇</p>
+    <a href="https://t.me/Crack_Shap1" target="_blank" class="button">Join Telegram Channel</a>
+  </div>
+  <script>
+    function switchLang() {
+      const fa = document.getElementById('fa');
+      const en = document.getElementById('en');
+      const btn = document.querySelector('.lang-switch');
+      if (fa.style.display === 'none') {
+        fa.style.display = 'block';
+        en.style.display = 'none';
+        btn.textContent = 'English';
+        document.body.setAttribute('dir','rtl');
+      } else {
+        fa.style.display = 'none';
+        en.style.display = 'block';
+        btn.textContent = 'فارسی';
+        document.body.setAttribute('dir','ltr');
+      }
+    }
+  </script>
+</body>
+</html>
